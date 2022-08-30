@@ -13,14 +13,14 @@ import {
 import React, { useEffect, useState } from "react";
 import Matcher from "../components/Matcher";
 import { exportData, saveWorkBook } from "../lib/excelJS";
-import useStore from "../lib/zustand";
+import {useStore} from "../lib/zustand";
 
 function match() {
+
   const matchList = useStore((state) => state.matchList);
   const compareList = useStore((state) => state.compareList);
   const finalList = useStore((state) => state.finalList);
   const init = useStore((state) => state.init);
-
   const matchIndex = useStore((state) => state.matchIndex);
 
   const [countParamsToMatch, setCountParamsToMatch] = useState(0);

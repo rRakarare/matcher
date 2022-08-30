@@ -18,7 +18,7 @@ import {
   useDisclosure,
   VStack,
 } from "@chakra-ui/react";
-import useStore from "../lib/zustand";
+import {useStore} from "../lib/zustand";
 import { ArrowRightIcon, RepeatIcon } from "@chakra-ui/icons";
 
 import { saveWorkBook, exportData } from "../lib/excelJS";

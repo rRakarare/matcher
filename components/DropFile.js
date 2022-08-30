@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 import * as xlsx from "xlsx/xlsx.mjs";
 import { useRef, useState, useCallback, useEffect } from "react";
-import useStore from "../lib/zustand";
+import {useStore} from "../lib/zustand";
 import {useDropzone} from 'react-dropzone'
 
 function DropFile( {title, isMatchList,} ) {
