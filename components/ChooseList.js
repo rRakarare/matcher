@@ -1,6 +1,6 @@
 import { Box, Button, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, VStack } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import {useStore} from "../lib/zustand";
+import useStore from "../lib/zustand";
 
 function ChooseList({isOpen, onClose, matchList, matchIndex}) {
 

@@ -24,7 +24,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 
 import DropFile from "../components/DropFile";
-import {useStore} from "../lib/zustand";
+import useStore from "../lib/zustand";
 
 export default function Home() {
   const matchList = useStore((state) => state.matchList);
